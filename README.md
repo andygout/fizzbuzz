@@ -52,10 +52,10 @@ IRB (Interactive Ruby Shell):
 - `(1..100).map{| number| fizzbuzz(number) }` => create array
 - `fizzes = _` => saves last created value to variable called 'fizzes'
 - `fizzes.count` => 100
-- fizzes.select{ |element| element == 'Fizz' }
-- fizzes.select{ |element| element == 'Fizz' }.count => number of times 'fizz' occurs (27)
-- fizzes.select{ |element| element == 'Buzz' }.count => number of times 'buzz' occurs (14)
-- fizzes.select{ |element| element == 'Fizzbuzz' }.count => number of times 'fizzbuzz' occurs (6)
+- `fizzes.select{ |element| element == 'Fizz' }`
+- `fizzes.select{ |element| element == 'Fizz' }.count` => number of times 'fizz' occurs (27)
+- `fizzes.select{ |element| element == 'Buzz' }.count` => number of times 'buzz' occurs (14)
+- `fizzes.select{ |element| element == 'Fizzbuzz' }.count` => number of times 'fizzbuzz' occurs (6)
 - `quit`
 
 
