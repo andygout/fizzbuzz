@@ -22,7 +22,16 @@ Technologies used:
 Testing setup:
 -------
 
-- Create this folder directory:
+- `$ rspec --init` (will install rspec, create `.rspec` file and `spec` folder (containing `spec_helper.rb` file))
+- Add line `--format documentation` to `.rspec` file so appears as below:
+
+```
+--color
+--format documentation
+--require spec_helper
+```
+
+- Replicate this folder directory:
 
 ````
       ├── lib
@@ -30,14 +39,6 @@ Testing setup:
       └── spec
           └── fizzbuzz_spec.rb
 ````
-
-- `$ gem install rspec` (*or* create file `Gemfile` and add `gem 'rspec'` then `$ bundle`)
-- Add file `.rspec` and add following lines:
-
-```
---color
---format documentation
-```
 
 - Run tests from root: `$ rspec`
 - *Or* by specifically calling spec file in isolation (should you have many test files and only wish to run one): `$ rspec ./spec/fizzbuzz_spec.rb`
